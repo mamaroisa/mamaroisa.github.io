@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link  href = " https://fonts.googleapis.com/css2?family=Material+Icons "
+       rel = " stylesheet " > 
+  <title>Экокемпинг DOME</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo"><img src="/pic/dp.png" alt="">+7(945) 677-94-05</div>
+
+        <nav class="nav">
+      
+          <a class="nav__link" href="2.html">Услуги</a>
+          <a class="nav__link" href="3.html">Размещение</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+        <a class="intro__logo" href="#"><img src="/pic/DOME.jpg" width="250" height="160"></a>
+        <a class = "btn" href="#">Забронировать</a>
+        </div>
+      </div>
+      
+  </div>
+  
+
+
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">О нашем экокемпинге</h2>
+         <div class="section__text">
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur iure veniam iusto quo dicta perferendis tempora. Sit, qui? Excepturi deleniti unde quis nisi quae earum quibusdam consequuntur culpa! Explicabo.
+                Eveniet accusamus voluptatum numquam voluptas sint eius quaerat. Recusandae maiores nam, fugit, neque pariatur temporibus suscipit accusamus, error ullam eaque doloribus tenetur. Molestias repellendus quis blanditiis deleniti illo, quasi consectetur.
+                Fugit atque velit, officia aliquam aliquid amet repellendus dignissimos iure deserunt quas molestias labore, dolorum possimus voluptate mollitia id cum voluptatum ducimus laboriosam. Doloremque fugit at mollitia est in tempora.
+                Ex veritatis cum earum nihil eum consequatur voluptas sequi corrupti culpa eligendi asperiores quasi saepe laboriosam quos voluptatem recusandae quidem accusantium similique, ullam nobis aliquid sed iusto molestiae fugiat? Ducimus?
+                Quis aliquam veritatis accusantium fugit placeat quisquam harum temporibus earum. Expedita, natus culpa animi dolor, sapiente tempore deserunt doloremque fugit praesentium magni quaerat? Fugit sint eveniet suscipit esse obcaecati tempora.</p>
+          </div>
+    </div>
+  </div>
+</section>
+
+<section class="three">
+  <article>
+      <h2>Локации</h2>
+
+      <!-- slider -->
+
+      <div class="slider-rendering">
+          <div class="slide-for-img" :style="animation">
+              <div v-for="image in images" class="slider-img" :id="'slide-img' + image.id">
+                  <div class="slider-img-in">
+                      <img :src="image.src" :alt="image.title" :class="image.class" />
+                  </div>
+                  <p>{{image.title}}</p>
+              </div>
+          </div>
+          <ul>
+              <li v-for="(image, key) in images" :id="'slide-li' + parseInt(key + 1)"
+                  :class="{current:parseInt(key + 1) == current}">
+                  .
+              </li>
+          </ul>
+      </div>
+
+      <!--  -->
+
+  </article>
+</section>
+
+<section class="section__one">
+  <div class="container">
+    <section class="flex">
+          <div class="item">
+             <h2>Семейный отдых</h2>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur iure veniam iusto quo dicta perferendis tempora. Sit, qui? Excepturi deleniti unde quis nisi quae earum quibusdam consequuntur culpa! Explicabo.
+                Eveniet accusamus voluptatum numquam voluptas sint eius quaerat. Recusandae maiores nam, fugit, neque pariatur temporibus suscipit accusamus, error ullam eaque doloribus tenetur. Molestias repellendus quis blanditiis deleniti illo, quasi consectetur.
+                Fugit atque velit, officia aliquam aliquid amet repellendus dignissimos iure deserunt quas molestias labore, dolorum possimus voluptate mollitia id cum voluptatum ducimus laboriosam. Doloremque fugit at mollitia est in tempora.
+               </p> 
+          </div>
+          <div class="item">   
+                <h2>Корпоративный отдых</h2>       
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur iure veniam iusto quo dicta perferendis tempora. Sit, qui? Excepturi deleniti unde quis nisi quae earum quibusdam consequuntur culpa! Explicabo.
+                  Eveniet accusamus voluptatum numquam voluptas sint eius quaerat. Recusandae maiores nam, fugit, neque pariatur temporibus suscipit accusamus, error ullam eaque doloribus tenetur. Molestias repellendus quis blanditiis deleniti illo, quasi consectetur.
+                 um. Expedita, natus culpa animi dolor, sapiente tempore deserunt doloremque fugit praesentium magni quaerat? Fugit sint eveniet suscipit esse obcaecati tempora.</p>
+          </div>
+          <div class="item">
+                 <h2>Молодёжный отдых</h2>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur iure veniam iusto quo dicta perferendis tempora. Sit, qui? Excepturi deleniti unde quis nisi quae earum quibusdam consequuntur culpa! Explicabo.
+                    Eveniet accusamus voluptatum numquam voluptas sint eius quaerat. Recusandae maiores nam, fugit, neque pariatur temporibus suscipit accusamus, error ullam eaque doloribus tenetur. Molestias repellendus quis blanditiis deleniti illo, quasi consectetur.
+                   . Expedita, natus culpa animi dolor, sapiente tempore deserunt doloremque fugit praesentium magni quaerat? Fugit sint eveniet suscipit esse obcaecati tempora.</p>
+          </div>
+      </div>
+  </div>
+</section>
+</section>
+
+<footer>
+     <img class= "fot_logo"  src="/pic/DOME.jpg" alt="">
+</footer>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="script.js"></script>
+<script src="slider.js"></script>
+
+
+</body>
+</html>

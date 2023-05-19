@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style2.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+     <link  href = " https://fonts.googleapis.com/css2?family=Material+Icons "
+          rel = " stylesheet " > 
+     <title>none</title>
+ </head>
+
+ 
+ <body>
+  <div class="container">
+     <header>
+      <header class="header">
+        
+          <div class="header__inner">
+           
+    
+            <nav class="nav">
+              <a class="nav__link" href="index.html">Home</a>
+              <a class="nav__link" href="#">Услуги</a>
+              <a class="nav__link" href="3.html">Размещение</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+     <section class="zag">
+      <h1>Выбирайте для души и бронируйте!</h1>
+     </section>
+        <div id="app">
+        
+            <div class="location-contain">
+             
+              <div class="locations" v-for="location in locations" :key="location.name">
+                <place :location="location">
+                  
+                  <h2>{{ location.name }}</h2>
+                 
+                  <p>{{location.text}}</p>
+                  <p>{{ location.desc }}</p>
+                  <a class = "bt" href="3.html">Узнать цены/забронировать</a>
+                </place>
+              </div>
+            </div>
+          </div>
+        
+<footer>
+  <img class= "fot_logo"  src="/pic/DOME.jpg" alt="">
+</footer>
+          <script type="text/x-template" id="place">
+           <div class="place">
+              <img :src="location.img" width="240" height="220"/>
+              <slot></slot>
+            
+            </div>
+          </script>
+    
+        </div>
+     <script src="https://unpkg.com/vue@next"></script>
+     <script src="script.js"></script>
+     <script src="card.js"></script>
+ </body>
+ </html>

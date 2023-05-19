@@ -1,0 +1,162 @@
+
+
+
+/*css 2.html*/  
+
+body{
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+} 
+
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+  }
+  .container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px auto;
+  }
+
+  /*header*/
+  .header{
+   
+      background-image: url('./pic/20.jpg');
+      border-radius: 0 0 50px 50px;
+      width: 100%;
+      padding: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+  }
+  .header__inner{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  
+  }
+  .header__logo{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  .nav{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+  
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+  
+    transition: color 0.2s linear;
+  }
+  .nav__link:hover{
+    color:#21565d;
+  }
+
+ .zag{
+font-family: 'Montserrat', sans-serif;
+   color: #fff;
+   margin-top: 160px;
+   margin-bottom: 50px;
+ } 
+  
+  /*Button*/
+.bt{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+  
+  
+    border: 3px solid #2a8880;
+  
+    font-size: 10px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    transition: color 1.2s linear;
+  }
+  .bt:hover{
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /*Карточки*/
+  
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .location-contain {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    
+
+   
+  }
+  .locations{
+      
+      display: flex;
+      height: fit-content;
+    
+
+  }
+  .place {
+    display: flex;
+    flex-direction: column;
+    
+
+    border-radius: 5px;
+
+    font-size: 11px;
+ 
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px 20px;
+    margin: 10px;
+    text-align: center;
+  }
+    .h2 {
+      font-size: 10px;
+      margin: 0;
+      text-align: center;
+    }
+    
+    .p{
+      font-size: 10px;
+    }
+    img {
+      margin: 0;
+      align-self: center;
+    }
+  
+
+
+    footer{
+      background-color: #333;
+      color: white;
+    }
+    .fot_logo{
+    
+    margin: 15px ;
+      width: 100px;
+      height: 60px;
+    }
+    
