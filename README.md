@@ -13,5 +13,5 @@ This project was built using the following technologies:
 3. **JavaScript** - A multi-paradigm programming language.
 4. **GitHub Pages** - A platform for hosting static websites directly from GitHub repositories.
 
-The site is live at https://mamaroisa.github.io/
+The site is live at http://ecocamping.zzz.com.ua/site-main/
 
